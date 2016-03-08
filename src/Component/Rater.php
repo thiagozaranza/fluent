@@ -18,7 +18,10 @@ class Rater extends Node
     public function make() {
 
         $this->addChild(
-            Fluent::div($this->id)->addClass('input')->addClass('select')->addClass($this->color)
+            Fluent::div($this->id)
+                ->addClass('input')
+                ->addClass('select')
+                ->addClass($this->color)
                 ->addChild(Fluent::div()->addClass('br-widget')
                     ->addChild(
                         Fluent::a()
